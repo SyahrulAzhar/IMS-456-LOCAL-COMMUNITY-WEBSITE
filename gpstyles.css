@@ -1,0 +1,117 @@
+* {box-sizing: border-box;}
+        
+    /* Website Background Color, Size and Fade Animation */
+        body {background: url(images/background-img.jpg) no-repeat center center fixed; margin: auto; width: 80%;
+
+            -webkit-background-size: 100% 100% cover;
+            -moz-background-size: 100% 100% cover;
+            -o-background-size: 100% 100% cover;
+            background-size: 100% 100% cover;}
+        
+        .fade {
+            -webkit-animation: fadein 2s; /* Fade Effect Safari, Chrome and Opera > 12.1 */ 
+            -moz-animation: fadein 2s; /* Fade Effect Firefox < 16 */ 
+            -ms-animation: fadein 2s; /* Fade Effect Internet Explorer */ 
+            -o-animation: fadein 2s; /* Fade Effect Opera < 12.1 */
+            animation: fadein 2s;}
+        
+        @keyframes fadein {from {opacity: 0; }to   { opacity: 1; }}
+
+        /* Firefox < 16 */
+        @-moz-keyframes fadein {from {opacity: 0;}to {opacity: 1; }}
+
+        /* Safari, Chrome and Opera > 12.1 */
+        @-webkit-keyframes fadein {from {opacity: 0;}to {opacity: 1; }}
+
+        /* Internet Explorer */
+        @-ms-keyframes fadein {from {opacity: 0;}to {opacity: 1; }}
+
+        /* Opera < 12.1 */
+        @-o-keyframes fadein {from {opacity: 0;}to {opacity: 1; }}
+
+        .popout {animation: popout 1s ease; -webkit-animation: popout 1s ease;}
+
+        @keyframes popout {from{transform:scale(0)} 15%{transform:scale(1.1)} to{transform:scale(1)}}
+
+        @-webkit-keyframes popout {from{-webkit-transform:scale(0)} 15%{ -webkit-transform:scale(1.1)} to{-webkit-transform:scale(1)}}
+    
+    /* Link Styles */
+        a:any-link {color: white; background-color: transparent; text-decoration: none;}
+
+        a:hover {color: white; background-color: transparent; text-decoration: none;}
+
+    /* Responsive Banner */
+        .responsive-banner {width: 100%; height: auto;}
+        
+    /* Responsive Navigation Bar Styles */
+        .navbar {background-color: #8E7CC3; font-family: "Courier"; overflow: auto; box-shadow: 6px 8px #333333;}
+
+        .navbar a {float: right; font-family: "Courier"; font-size: 16px; color: white; text-align: center; padding: 14px 16px; text-decoration: none; text-shadow: 2px 2px #333333;}
+
+        .dropdown {float: right; overflow: hidden;}
+
+        .dropdown .dropbtn {font-size: 16px; border: none; outline: none; color: white; padding: 14px 16px; background-color: inherit; font-family: inherit; text-shadow: 2px 2px #333333; margin: 0;}
+
+        .navbar a:hover, .dropdown:hover .dropbtn {background-color: #d9d2e9;}
+
+        .dropdown-content {display: none; position: absolute; background-color: #d9d2e9; min-width: 160px; box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2); z-index: 1;}
+
+        .dropdown-content a {float: none; color: white; padding: 12px 16px; text-decoration: none; display: block; text-align: left;}
+
+        .dropdown-content a:hover {background-color: #8E7CC3;}
+
+        .dropdown:hover .dropdown-content {display: block;}
+
+    /* Header Style */
+        .container {background-color: #8E7CC3; box-shadow: 6px 8px #333333;}
+
+    /* Welcome Text Style */
+        .text-box1 {font-size: 80px; font-family: "Bebas"; color: white; text-align: center; text-shadow: 4px 4px #333333}
+
+    /* Welcome Button */
+        .center {display: flex; justify-content: center; align-items:}
+        
+        .btn {cursor: pointer; border: 3px solid #ffffff; background-color: transparent; height: 100px; width: 300px; color: white; font-size: 40px; text-align: center; font-family: "Courier"; text-shadow: 3px 3px #333333; box-shadow: 3px 4px #333333;}
+
+    /* Title Text Style */
+        h1 {font-family: "Courier"; text-align: center; color: white; text-shadow: 2px 2px #333333;}
+
+        h2 {font-family: "Courier"; text-align: center; color: white; text-shadow: 2px 2px #333333;}
+
+    /* Two Unequal Column & Grid Styles */
+        .column-1 {float: left; padding: 0;}
+
+        .left-1 {width: 30%;}
+
+        .right-1 {width: 70%;}
+
+        .row-1:after {content: ""; display: table; clear: both;}
+
+    /* Responsive Image */
+        .responsive-img {width: 100%; max-width: 250px; height: auto; display: inline-block; box-shadow: 6px 8px #333333;}
+
+    /* Zoom On Hover Image */
+        .zoom {transition: transform .2s;}
+
+        .zoom:hover {
+        
+        -webkit-transform: scale(1.1); /* Safari, Chrome and Opera > 12.1 */
+        -moz-transform: scale(1.1); /* Firefox 16 */
+        -ms-transform: scale(1.1); /* IE 9 */
+        -o-transform: scale(1.1); /* Opera < 12.1 */
+        
+        transform: scale(1.1);}
+
+    /* Text Box */
+        .text-box {background-color: #8E7CC3;  box-shadow: 6px 8px #333333;}
+
+    /* Text Style */
+        p {font-family: "Courier"; font-size: 20px; text-align: center; color: white; text-shadow: 3px 3px #333333;}
+
+    /* Footer Style */
+        .footer {background-color: #8E7CC3; box-shadow: 6px 8px #333333;}
+
+        .footer-text {font-family: "Courier"; font-size: 20px; color: white; text-align: center; text-shadow: 2px 2px #333333;}
+
+    /* Group Image */
+        .res-img {width: 100%; max-width: 250px; justify-content: center; height: auto; display: flex; justify-content: center; box-shadow: 6px 8px #333333;}
